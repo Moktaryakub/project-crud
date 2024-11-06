@@ -8,6 +8,10 @@ const taskroot = (req,resizeBy) => {
     }else if (req.method ==='DELETE'){
         deleteTask(req,res);
     }else{
-        res.writeheader(404, 'Not Found',{  })
+        res.writeheader(404, 'Not Found',{ "content-type":"application/json" })
+        res.end(JSON.stringify({
+            massage:"unknuown method require "
+        }))
     }
 }
+module.exports =taskroot;
