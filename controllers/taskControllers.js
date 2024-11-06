@@ -1,3 +1,3 @@
-exports.getTasks =(req,res)=>{
-    
+exports.getTasks =(res,req)=>{
+
 }
