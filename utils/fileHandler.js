@@ -7,3 +7,11 @@ const writeTasktoFile =(tasks)=>{
 
 
 }
+
+const readTasksFromFile = ()=>{
+    if(!fs.existsSync(filepath)){
+        writeTasktoFile([])
+    }
+    const data = fs.readFileSync(filepath);
+    return JSON.parse(data); 
+}

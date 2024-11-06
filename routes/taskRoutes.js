@@ -1,6 +1,9 @@
+const { getTasks } = require("../controllers/taskControllers");
+
+
 const taskroot = (req,resizeBy) => {
     if (req.method ==='get'){
-        getTasks(req,res);
+        getTaskstTasks(req,res);
     }else if (req.method ==='post'){
         createTasks(req,res);
     }else if (req.method ==='patch'){
