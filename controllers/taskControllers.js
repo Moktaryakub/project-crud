@@ -38,6 +38,15 @@ exports.createTasks =(res,req)=>{
         }
 
     })
+}
 
-
+exports.updateTasks =(res,req)=>{
+    resend(JSON.stringify({
+        message: "non yet implemented tasks updated"
+    }
+    ));
+}
+exports.delettask =(res,)=>{
+    res.end(JSON.stringify({
+        message:"non yet implemented tasks"}));
 }

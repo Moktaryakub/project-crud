@@ -1,4 +1,4 @@
-const { getTasks } = require("../controllers/taskControllers");
+const { getTasks ,createTasks,updateTasks,delettask} = require("../controllers/taskControllers");
 
 
 const taskroot = (req,resizeBy) => {
